@@ -20,8 +20,6 @@ function submitData(name, email) {
   };
 
 
-
-
   return fetch("http://localhost:3000/users", configurationObject)
     .then(function(response) {
         return response.json();
@@ -30,7 +28,6 @@ function submitData(name, email) {
       document.body.innerHTML = object.id;
     })
     .catch(function(error) {
-      alert("Bad things! Ragnarők!");
-      console.log(error.message);
+      document.body.innerHTML = error.message;
     });
 }
