@@ -1,5 +1,5 @@
 // Add your code here
-fetch(destinationURL, configurationObject);
+fetch("http://localhost:3000/dogs", configurationObject);
 
 configurationObject = {
   method: "POST"
