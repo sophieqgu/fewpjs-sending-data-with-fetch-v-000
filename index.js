@@ -15,7 +15,7 @@ let configurationObject = {
 };
 
 function submitData() {
-  return fetch("http://localhost:3000/dogs", configurationObject)
+  return fetch("http://localhost:3000/users", configurationObject)
     .then(function(response) {
         return response.json();
       })
