@@ -4,16 +4,14 @@ let formData = {
   dogBreed: "Poodle"
 };
 
-fetch("http://localhost:3000/dogs", configurationObject);
 
-configurationObject = {
+let configurationObject = {
   method: "POST"
   headers: {
     "Content-Type": "application/json"
     "Accept": "application/json"
   }
-  body: JSON.stringify({
-    dogName: "Byron",
-    dogBreed: "Poodle"
-  })
+  body: JSON.stringify(formData)
 };
+
+fetch("http://localhost:3000/dogs", configurationObject)
