@@ -15,3 +15,9 @@ let configurationObject = {
 };
 
 fetch("http://localhost:3000/dogs", configurationObject)
+  .then(function(response) {
+      return response.json();
+    })
+  .then(function(object) {
+    console.log(object);
+  });
