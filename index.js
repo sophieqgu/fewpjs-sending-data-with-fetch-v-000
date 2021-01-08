@@ -1,4 +1,9 @@
 // Add your code here
+let formData = {
+  dogName: "Byron",
+  dogBreed: "Poodle"
+};
+
 fetch("http://localhost:3000/dogs", configurationObject);
 
 configurationObject = {
